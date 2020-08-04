@@ -1,0 +1,83 @@
+
+
+
+<!DOCTYPE html>
+<html>f
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/isstyle.css">
+	<title>Me-Chat</title>
+    
+</head>
+<body>
+	<div class="align">
+		<img class="logo" src="img/logo1.svg">
+		<div class="card">
+			<div class="head">
+				<div></div>
+				<a id="login" class="selected" href="#login" onclick="clSound('clicked');">Profile</a>
+				<a id="register" href="#register" onclick="clSound('clicked');">Login</a>
+				<div></div>
+			</div>
+			<div class="tabs">
+				<form action="#register">
+					<div class="inputs">
+						<div class="input">
+							<input placeholder="enter your full name" type="text"  required>
+							<img src="img/user.svg">
+						</div>
+						<div class="form-control">
+							
+							<select name="gender" id="gender" required>
+									<option  class="text-center" >Select your gender</option>
+									<option value="Male">Male</option>
+									<option value="Female">Female</option>
+									<option value="Others">Others</option>
+									
+								</select>
+						</div>
+						<label class="checkbox">
+							<input type="checkbox">
+							<span>Remember me</span>
+						</label>
+					</div>
+					<button>Save</button>
+				</form>
+				<form action="newchat.html">
+					<div class="inputs">
+						
+						<div class="input">
+							<input placeholder="enter your first name" type="text" name="username" required >
+							<img src="img/user.svg">
+						</div>
+						<div class="form-control">
+							
+							<select name="room" id="room" required>
+									<option class="text-center">Select a Room</option>
+									<option value="School Buddies">School Buddies</option>
+									<option value="Seniors">Seniors</option>
+									<option value="Arora Peeps">AIS All </option>
+									<option value="Only Boys">Only Boys</option>
+									<option value="Jaiswal Family">Jaiswal Family</option>
+									<option value="Only Girls">Only Girls</option>
+									<option value="IIT Kanpur Y16">IIT Kanpur Y16</option>
+									<option value="Mentors Eduserv">Mentors Eduserv</option>
+									<option value="Students">Students</option>
+									<option value="A new Friend">A new Friend</option>
+							</select>
+						</div>
+						<label class="checkbox">
+							<input type="checkbox">
+							<span>Remember me</span>
+						</label>
+					</div>
+					<button type="submit">join chat</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/index.js"></script>
+	
+</body>
+</html>

@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	
+	outline: none;
+	border: none;
+}
+
+
+
+body {
+  margin: auto auto;
+  height: 100%;
+  width: 100%;
+  
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  
+  align-items: center;
+  justify-content: center;
+  color:#555;
+  background: black;
+}
+.login-div {
+    
+    margin:0 auto;
+  width:315px;
+  height: 446px;
+  padding: 60px 35px 35px 35px;
+  border-radius: 40px;
+  background: black;
+  box-shadow: 3px 1px 10px maroon,
+              -3px -3px 10px yellow;
+}
+.logo {
+  background:url('..img/message.png');
+  width:100px;
+  height: 100px;
+  border-radius: 50%;
+  margin:0 auto;
+  box-shadow: 
+  /* logo shadow */
+  0px 0px 2px maroon,
+  /* offset */
+  0px 0px 0px 5px red,
+  /*bottom right */
+  8px 8px 15px cadetblue,
+  /* top left */
+  -8px -8px 15px white
+  ;
+}
+.title {
+  text-align: center;
+  color:blue;
+  font-size: 28px;
+  padding-top: 24px;
+  letter-spacing: 0.5px;
+}
+.sub-title {
+  text-align: center;
+  font-size: 10px;
+  text-decoration:uppercase;
+  padding-top: 7px;
+  letter-spacing: 3px;
+  
+  margin-bottom:60px;
+  color:gray;
+}
+
+.signin-button {
+   
+  margin:0 auto;  
+  outline: none;
+  border:none;
+  cursor: pointer;
+  width:100%;
+  height: 30px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: 'Lato', sans-serif;
+  color:maroon;
+  text-align: center;
+  background: transparent;
+  box-shadow: 1px 1px 4px green,
+              -1px -1px 1px #ffffff;
+  transition: 0.5s;
+}
+.signin-button:hover {
+  background:#2fdbb6;
+}
+.signin-button:active {
+  background:#1da88a;
+}
+.link {
+  padding-top: 20px;
+  text-align: center;
+}
+.link a {
+  text-decoration: none;
+  color:#aaa;
+  font-size: 15px;
+}

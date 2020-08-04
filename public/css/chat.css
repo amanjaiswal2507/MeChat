@@ -1,0 +1,261 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	font-family: "Roboto";
+	outline: none;
+	border: none;
+}
+html, body {
+	height: 100%;
+	width:100%;
+	background: black;
+}
+.align {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction:column;
+    padding-bottom:4px;
+}
+.logo {
+	width: 90px;
+	z-index:2;
+	margin-bottom:1px;
+}
+.card{
+    height:100%;
+    max-height:446px;
+    width: 320px;
+	background: black;
+    border: 1px solid orange;
+    border-radius: 10px;
+	overflow: hidden;
+    transition: max-height 0.2s;
+    overflow:hidden;
+}
+.extend {
+	max-height: 446px;
+}
+.head {
+	width: 100%;
+	display: flex;
+	height: 72px;
+	border-bottom: 1px solid #373737;
+	justify-content: space-between;
+}
+
+.head a {
+	height: 100%;
+	padding: 0 28px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: rgb(140,140,140);
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.head .selected {
+	position: relative;
+	color: #00FF5C;
+	font-weight: 700;
+}
+
+.head .selected:after {
+	position: absolute;
+	content: "";
+	bottom: 0;
+	left: 0;
+	height: 5px;
+	width: 100%;
+	background: cadetblue;
+	border-radius: 99px 99px 0 0;
+}
+.tabs {
+	height: calc(100% );
+	display: flex;
+}
+form {
+	width: 100%;
+	height: 85%;
+	flex-shrink: 0;
+	padding: 8px 6px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	right: 0;
+	transition: right 0.2s;
+}
+
+.extend form {
+	right: 100%;
+}
+.chat-messages {
+    overflow-y: scroll;
+    margin-bottom:25px;
+	width:310px;
+}
+
+.chat-messages .message {
+    padding: 4px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border:  1px ridge maroon;
+    border-radius: 5px;
+    width: 100% ;
+	max-width: 320px;
+	
+	
+}
+#home{
+	font-size:20px;
+	color:orange;
+}
+
+
+
+.chat-messages .message .meta {
+    font-size: 15px;    
+    color: orange;
+    opacity: 0.8;
+    margin-bottom: 8px;
+}
+.chat-messages .message .text {
+    color: lightcoral;
+	overflow-y:scroll;
+	max-width:280px;
+	margin-bottom:0px;
+    
+    
+    
+}
+
+.chat-messages .message .meta span {
+    color: #777;
+}
+.chat-form-container {
+    position:absolute !important;
+    width:100%;
+    top:320px;
+    margin-top:10px;
+    margin-left:10px;
+    margin-bottom:15px;
+    color:#8FBC8F;
+    padding: 1px 1px;
+    background-color: black;
+}
+
+.chat-form-container form {
+    display: flex;
+}
+
+.chat-form-container input[type="text"] {
+    background:transparent;
+    font-size: 16px;
+    padding: 5px;
+    height: 40px;
+    width:80%;
+    flex: 1;
+    border-radius: 5px;
+    border: 1px solid gray;
+    margin-bottom:10px;
+    color:aqua;
+}
+
+#leave {
+	text-align:center;
+	display: block;
+	margin-left:50px;;
+	background:transparent;
+	padding: 14px 42px;
+	border: 1px solid green;
+	border-radius: 12px;
+	font-weight: 700;
+	font-size: 21px;
+	cursor: pointer;
+}
+#leave:hover{	
+	background:cadetblue;
+}
+#leave a:hover{
+	color:black;
+}
+::-webkit-scrollbar {
+  width: 3px;
+  max-width:3px;
+  height: 5px;
+  margin-right:0px;
+  margin-left:5px;
+  padding-left:5px;
+  margin-bottom:22px;
+
+}
+ 
+::-webkit-scrollbar-thumb {
+  background:linear-gradient(red,blue);
+  border-radius: 20px;
+}
+
+#texting{
+    width:50px;
+    background:transparent;
+    border:1px solid maroon;
+	border-radius:5px;
+	height:38px;
+	cursor:pointer;
+	margin-bottom: 10px;
+}
+#plane{
+    color:blue;
+    font-size:20px;
+}
+.chat-sidebar {
+	top:50%;
+    width:310px;
+    color: cadetblue;
+    padding: 20px 20px 60px;
+    overflow-y:scroll;
+}
+
+.chat-sidebar h2 {
+    font-size: 20px;
+    background: transparent;
+	border: 1px solid maroon;
+	border-radius:5px;
+    padding: 10px;
+    margin-bottom: 20px;
+	color:green;
+	text-align:center;
+}
+
+.chat-sidebar h3 {
+    margin-bottom: 15px;
+}
+ul{
+	list-style:none;
+}
+
+.chat-sidebar ul li {
+    padding: 10px 0;
+	decoration:none;
+	text-align:center;
+	color:green;
+	overflow-y:scroll;
+}
+#commented{
+	color:blue;
+}
+#group{
+	color:red;
+}
+
+ 
+ 
+
+
+
